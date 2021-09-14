@@ -1,0 +1,22 @@
+#
+# DON'T TOUCH THIS
+#
+file-version: 0
+
+#
+# Plugin Messages
+#
+prefix: "&8[&aPlugin&8]&r"
+key-missing: "{prefix} &cMessage for &e`{key}` &cis missing!"
+no-perm: "{prefix} &cYou don't have permissions for this command."
+reload: "{prefix} &aConfig and Lang reloaded"
+unknown-command: "{prefix} &7Unknown Sub Command"
+update:
+  - "&a&m====================================================="
+  - ""
+  - "&b There's an update for &aPlugin&f!"
+  - "&b You're running &a{version} - {checkResult}&b, but &a{newVersion}&b has been released!"
+  - "&b You can download the latest version from:"
+  - "&a {updateUrl}"
+  - ""
+  - "&a&m====================================================="

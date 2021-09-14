@@ -15,7 +15,7 @@
         </repository>
         <repository>
             <id>placeholderapi</id>
-            <url>http://repo.extendedclip.com/content/repositories/placeholderapi/</url>
+            <url>https://repo.extendedclip.com/content/repositories/placeholderapi/</url>
         </repository>
     </repositories>
 
@@ -24,7 +24,9 @@
         <dependency>
             <groupId>com.foxxite</groupId>
             <artifactId>FXCore</artifactId>
-            <version>1.0.1</version>
+            <version>1.0.3</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/src/main/resources/FXCore-1.0.3.jar</systemPath>
         </dependency>
 
         <dependency>
@@ -44,7 +46,7 @@
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <version>1.18.14</version>
+            <version>1.18.20</version>
             <scope>provided</scope>
         </dependency>
 

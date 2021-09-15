@@ -1,12 +1,13 @@
-package com.foxxite.emptyplugin.misc;
+package com.firelight.McCityBuilderPlugin.utils;
 
-import com.foxxite.emptyplugin.EmptyPlugin;
+import com.firelight.McCityBuilderPlugin.McCityBuilderPlugin;
 import com.foxxite.fxcore.config.Config;
 import com.foxxite.fxcore.config.Language;
 import com.foxxite.fxcore.misc.Common;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.command.TabExecutor;
+import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.entity.Player;
 
 import java.util.ArrayList;
@@ -14,13 +15,13 @@ import java.util.List;
 
 public class CommandHandler implements TabExecutor {
 
-    private final EmptyPlugin plugin;
-    private final Config config;
+    private final McCityBuilderPlugin plugin;
+    private final FileConfiguration config;
     private final Language language;
 
-    public CommandHandler(final EmptyPlugin plugin) {
+    public CommandHandler(final McCityBuilderPlugin plugin) {
         this.plugin = plugin;
-        this.config = plugin.getConfigRaw();
+        this.config = plugin.getConfig();
         this.language = plugin.getLanguage();
     }
 
@@ -33,7 +34,6 @@ public class CommandHandler implements TabExecutor {
                     switch (args[0]) {
                         case "reload":
                             if (player.hasPermission("plugin.reload")) {
-                                this.config.reloadConfig();
                                 this.plugin.reloadConfig();
                                 this.language.reloadLanguage();
                                 player.sendMessage(this.language.getMessage("reload"));

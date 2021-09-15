@@ -1,4 +1,4 @@
-package com.foxxite.emptyplugin.tasks;
+package com.firelight.McCityBuilderPlugin.tasks;
 
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.Plugin;

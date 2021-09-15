@@ -1,8 +1,8 @@
-package com.foxxite.emptyplugin;
+package com.firelight.McCityBuilderPlugin;
 
-import com.foxxite.emptyplugin.events.EventListener;
-import com.foxxite.emptyplugin.misc.CommandHandler;
-import com.foxxite.emptyplugin.tasks.Task;
+import com.firelight.McCityBuilderPlugin.events.EventListener;
+import com.firelight.McCityBuilderPlugin.tasks.Task;
+import com.firelight.McCityBuilderPlugin.utils.CommandHandler;
 import com.foxxite.fxcore.config.Config;
 import com.foxxite.fxcore.config.Language;
 import com.foxxite.fxcore.misc.UpdateChecker;
@@ -21,7 +21,7 @@ import java.util.logging.LogRecord;
 
 import static com.foxxite.fxcore.misc.UpdateChecker.UpdateCheckResult.UP_TO_DATE;
 
-public class EmptyPlugin extends JavaPlugin {
+public class McCityBuilderPlugin extends JavaPlugin {
 
     // Premium Placeholders
     public static final String RESOURCE_ID = "%%__RESOURCE__%%";

@@ -1,4 +1,4 @@
-package com.foxxite.emptyplugin.events;
+package com.firelight.McCityBuilderPlugin.events;
 
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;

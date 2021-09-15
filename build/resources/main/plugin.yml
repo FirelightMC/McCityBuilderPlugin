@@ -1,0 +1,4 @@
+name: McCityBuilderPlugin
+version: '${project.version}'
+main: com.firelight.McCityBuilderPlugin.McCityBuilderPlugin
+api-version: 1.17

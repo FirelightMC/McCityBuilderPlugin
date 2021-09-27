@@ -45,7 +45,7 @@ publishing {
     publications {
         gpr(MavenPublication) {
             groupId = 'com.firelight'
-            artifactId = 'McCityBuilderPluginTemplate'
+            artifactId = 'mccitybuilderplugintemplate'
             version = '0.1'
 
             from components.java
